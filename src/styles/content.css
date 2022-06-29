@@ -1,0 +1,394 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s ease-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+@font-face {
+    font-family: "PoppinsMed";
+    src: url('@/assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: "PoppinsReg";
+    src: url('@/assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/icons/MaterialIcons-Regular.ttf');
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+      -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.content{
+  min-width:  1645px;
+}
+.icon{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: #A9B1BD;
+  margin-right: 4px;
+  height: 24px;
+  width: 24px;
+}
+span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picker{
+  height: 78px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.info{
+  height: 54px;
+  width: 100%;
+  background-color: rgb(229, 234, 244, 0.25);
+  display: flex;
+  align-items: center;
+}
+.firstPicker{
+  margin-left: 140px;
+  height: 24px;
+  font-family: "PoppinsMed";
+  font-size: 16px;
+  color: #A9B1BD;
+  line-height: 150%;
+}
+.secondPicker{
+  margin-left: 82px;
+  height: 24px;
+  font-family: "PoppinsMed";
+  font-size: 16px;
+  color: #A9B1BD;
+  line-height: 150%;
+}
+.unactive{
+  height: 30px;
+}
+.active{
+  height: 30px;
+  box-sizing: border-box;
+  color: #11B0C8;
+  border-bottom: 3px solid #11B0C8;
+}
+p{
+  margin: 0;
+}
+.bottom{
+  height: 672px;
+  overflow-y: auto;
+}
+.infoTxt{
+  height: 22px;
+  font-family: "PoppinsMed";
+  font-size: 16px;
+  color: #A9B1BD;
+}
+.first{
+  width: 167px;
+  margin-left: 140px;
+  display: flex;
+  vertical-align: middle;
+}
+.second{
+  width: 222px;
+}
+.third{
+  width: 202px;
+}
+.fourth{
+  width: 212px;
+  display: flex;
+}
+.fifth{
+  width: 212px;
+}
+.sixth{
+  width: 216px;
+}
+.seventh{
+  width: 134px;
+}
+.item{
+  height: 84px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E5EAF4;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.itemTxt{
+  height: 24px;
+  font-family: "PoppinsReg";
+  font-size: 16px;
+  color: #A9B1BD;
+}
+.image{
+  height: 68px;
+  width: 43px;
+  object-fit: cover;
+}
+.imagedead{
+  height: 68px;
+  width: 43px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.light .dead{
+  position: absolute;
+  height: 28px;
+  width: 16px;
+  top: 5px;
+  left: 175px;
+}
+.dark .dead{
+  position: absolute;
+  height: 28px;
+  width: 16px;
+  top: 5px;
+  left: 175px;
+  filter: invert(100%);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(229, 234, 244, 0.25);
+}
+.nofav{
+  height: 43px;
+  width: 43px;
+  box-sizing: border-box;
+  border: 2px solid #11B0C8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nofavicon{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: #11B0C8;
+  height: 24px;
+  width: 24px;
+}
+.fav{
+  height: 43px;
+  width: 43px;
+  background-color: #11B0C8;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light .favicon{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+.dark .favicon{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: black;
+  height: 24px;
+  width: 24px;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .content{
+    min-width:  100vw;
+    max-width: 100vw;
+    width: 100vw;
+    height: calc(100vh - 185px);
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .picker{
+    height: 40px;
+    width: 365px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .firstPicker{
+    margin-left: 0px;
+    height: 24px;
+    font-family: "PoppinsMed";
+    font-size: 12px;
+    color: #A9B1BD;
+    line-height: 150%;
+  }
+  .secondPicker{
+    margin-left: 0;
+    height: 24px;
+    font-family: "PoppinsMed";
+    font-size: 12px;
+    color: #A9B1BD;
+    line-height: 150%;
+  }
+  .info{
+    height: 40px;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .infoTxt{
+    font-size: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .first{
+    width: 12vw;
+    margin-left: 0px;
+    display: flex;
+  }
+  .second{
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+  }
+  .third{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+  }
+  .fourth{
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fifth{
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+  }
+  .sixth{
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+  }
+  .seventh{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+  }
+  .item{
+    height: 84px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5EAF4;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+  }
+  .itemTxt{
+    height: 24px;
+    font-family: "PoppinsReg";
+    font-size: 8px;
+    color: #A9B1BD;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .image{
+    height: 68px;
+    width: 43px;
+    object-fit: cover;
+  }
+  .imagedead{
+    height: 68px;
+    width: 43px;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+  .light .dead{
+    position: relative;
+    height: 28px;
+    width: 16px;
+    top: -4px;
+    left: -8px;
+  }
+  .dark .dead{
+    position: relative;
+    height: 28px;
+    width: 16px;
+    top: -4px;
+    left: -8px;
+    filter: invert(100%);
+  }
+  .bottom{
+    height: calc(100vh - 265px);
+    overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+  width: 0px;
+  }
+  .icon{
+    font-family: 'Material Icons';
+    font-size: 8px;
+    color: #A9B1BD;
+    margin-right: 2px;
+    height: 24px;
+    width: 8px;
+  }
+  .nofav{
+    height: 25px;
+    width: 25px;
+    box-sizing: border-box;
+    border: 2px solid #11B0C8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nofavicon{
+    font-family: 'Material Icons';
+    font-size: 14px;
+    color: #11B0C8;
+    height: 12px;
+    width: 12px;
+  }
+  .fav{
+    height: 25px;
+    width: 25px;
+    background-color: #11B0C8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .light .favicon{
+    font-family: 'Material Icons';
+    font-size: 14px;
+    color: white;
+    height: 12px;
+    width: 12px;
+  }
+  .dark .favicon{
+    font-family: 'Material Icons';
+    font-size: 14px;
+    color: black;
+    height: 12px;
+    width: 12px;
+  }
+}

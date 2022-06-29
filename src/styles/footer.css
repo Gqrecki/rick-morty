@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "PoppinsMed";
+    src: url('@/assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: "PoppinsReg";
+    src: url('@/assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@/assets/icons/MaterialIcons-Regular.ttf');
+}
+.noselect{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+      -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.footer{
+  min-width:  1645px;
+  height: 141px;
+  outline: 1px solid #E5EAF4;
+}
+p{
+  margin: 0;
+  line-height: 150%;
+  font-family: "PoppinsMed";
+  font-size: 16px;
+  color: #A9B1BD;
+}
+.light .pActive{
+  color: white;
+}
+.dark .pActive{
+  color: black;
+}
+.control{
+  margin-left: 140px;
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+}
+.btn{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #A9B1BD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.btnActive{
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  background-color: #11B0C8;
+}
+.icoActive{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: #11B0C8;
+  height: 24px;
+}
+.ico{
+  font-family: 'Material Icons';
+  font-size: 24px;
+  color: #A9B1BD;
+  height: 24px;
+}
+#inputPage{
+  all: unset;
+  line-height: 150%;
+  font-family: "PoppinsMed";
+  font-size: 16px;
+  color: #A9B1BD;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input::placeholder {
+  color: #A9B1BD;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .footer{
+    min-width:  100vw;
+    max-width: 100vw;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-top: 1px solid #E5EAF4;
+    box-sizing: border-box;
+  }
+  .control{
+    padding: 0;
+    margin: 0;
+    width: 375px;
+    padding-left: 5px;
+    justify-content: center;
+  }
+}
