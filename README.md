@@ -1,4 +1,4 @@
-#https://subtle-crostata-0c63a7.netlify.app/
+Link to netlify: https://subtle-crostata-0c63a7.netlify.app/
 
 # vue-project
 
