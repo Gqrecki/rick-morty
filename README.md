@@ -1,4 +1,5 @@
 Link to netlify: https://subtle-crostata-0c63a7.netlify.app/
+Prepared for 1920x1080 full screen mode
 
 # vue-project
 
